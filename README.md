@@ -37,7 +37,7 @@ This project builds a **Retrieval-Augmented Generation (RAG)** system that predi
    - It runs an interactive loop where the user types a message and the model generates a reply.  
    - Type `exit` to quit the loop.
 
-## 🛠️ Libraries Used
+##  Libraries Used
 - **pandas, numpy** → Data handling and processing.
 - **emoji, re** → Text cleaning.
 - **sentence-transformers** → Pretrained embedding model.
@@ -46,7 +46,7 @@ This project builds a **Retrieval-Augmented Generation (RAG)** system that predi
 - **sacrebleu, rouge_score** → Evaluation metrics.
 - **tqdm, random** → Utility functions.
 
-## 🚀 Installation
+##  Installation
 ```bash
 # Clone repo
 git clone https://github.com/your-username/llm-chat-prediction.git
@@ -56,7 +56,7 @@ cd llm-chat-prediction
 pip install -r requirements.txt
 ```
 
-## ▶️ Usage
+##  Usage
 1. Prepare your WhatsApp chat dataset (`Mychat-clean-data.csv`).
 2. Run the notebook: `LLM_Task_Chat_Prediction_model.ipynb`.
 3. Try interactive chat:
@@ -64,20 +64,20 @@ pip install -r requirements.txt
 chat_with_model()
 ```
 
-## 📊 Evaluation Example
+##  Evaluation Example
 | Metric   | Score (sample run) |
 |----------|-------------------|
 | BLEU     | ~0.25             |
 | ROUGE-L  | ~0.32             |
 
-⚠️ Note: Automatic metrics underestimate quality because multiple valid replies exist in chat.
+ Note: Automatic metrics underestimate quality because multiple valid replies exist in chat.
 
-## ⚠️ Limitations & Ethics
+##  Limitations & Ethics
 - **Privacy:** WhatsApp data is personal → anonymize & use only with consent.
 - **Evaluation metrics:** BLEU/ROUGE not ideal for open-ended chat.
 - **No fine-tuning:** Only pretrained embeddings + LLM with RAG were used.
 
-## ✨ Future Improvements
+##  Future Improvements
 -Future Improvements
 - collect more data to feed for the model
 - Fine-tune embeddings or LLM on domain-specific data.
@@ -85,5 +85,5 @@ chat_with_model()
 - Build a proper chat UI (web/streamlit).
 
 ---
-📧 Author: *Falaq Zahra*  
+ Author: *Falaq Zahra*  
 🔗 Based on SentenceTransformers + FAISS + Groq API
